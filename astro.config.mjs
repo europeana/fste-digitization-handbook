@@ -2,7 +2,7 @@ import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 
 export default defineConfig({
-  site: 'https://digitlib.github.io',
+  site: 'https://europeana.github.io',
   base: '/fste-digitization-handbook',
   integrations: [
     starlight({
@@ -13,7 +13,7 @@ export default defineConfig({
         './src/styles/custom.css',
       ],
       social: {
-        github: 'https://github.com/DigitLib/fste-digitization-handbook',
+        github: 'https://github.com/Europeana/fste-digitization-handbook',
       },
       sidebar: [
         {
