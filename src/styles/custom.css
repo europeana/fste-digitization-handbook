@@ -1,0 +1,23 @@
+@media (min-width: 72rem) {
+    .container:where(.astro-7NKWCW3Z) {
+        margin-inline: 0px;
+    }
+}
+
+[data-has-sidebar] .main-pane:where(.astro-VRNAM7M3) {
+    --sl-content-margin-inline: auto 0;
+    order:1;
+    width:100%;
+}
+
+.container:where(.astro-7NKWCW3Z) {
+    max-width: 100%;
+}
+
+.content:where(.astro-ML6NTD6L) :is(
+
+iframe):not(:where(.not-content *)) {
+    display:block;
+    max-width:100%;
+    height:revert-layer;
+}
