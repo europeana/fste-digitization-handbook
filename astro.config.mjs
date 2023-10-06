@@ -20,7 +20,7 @@ export default defineConfig({
           label: 'Before you start',
           items: [
             // Each item here is one entry in the navigation menu.
-            { label: 'Read this', link: '/fste-digitization-handbook/1before/0index/' },
+            { label: 'Read this', link: '/1before/0index/' },
           ],
         },
         {

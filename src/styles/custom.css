@@ -4,20 +4,18 @@
     }
 }
 
-[data-has-sidebar] .main-pane:where(.astro-VRNAM7M3) {
+[data-has-sidebar] .main-pane {
     --sl-content-margin-inline: auto 0;
     order:1;
     width:100%;
 }
 
-.container:where(.astro-7NKWCW3Z) {
+.sl-container {
     max-width: 100%;
 }
 
-.content:where(.astro-ML6NTD6L) :is(
-
-iframe):not(:where(.not-content *)) {
+.content:where(.astro-ml6ntd6l) :is(iframe):not(:where(.not-content *)){
     display:block;
     max-width:100%;
-    height:revert-layer;
+    height:450px;
 }
