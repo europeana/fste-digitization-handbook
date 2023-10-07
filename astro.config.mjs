@@ -25,15 +25,37 @@ export default defineConfig({
         },
         {
           label: 'Planning',
+          collapsed: true,
           autogenerate: { directory: '2.planning' }
         },
         {
           label: 'Selection',
+          collapsed: true,
           autogenerate: { directory: '3.selection' }
         },
         {
           label: 'Digitization',
-          autogenerate: { directory: '4.digitization' }
+          collapsed: true,
+          items: [
+            { label: 'Digitization Process', link: '/4digitization/0index/' },
+            { label: 'Preparation', collapsed: true, autogenerate: { directory: '4.digitization/1.preparation' }, },
+            { label: 'Capturing', collapsed: true, autogenerate: { directory: '4.digitization/2.capturing' },},
+          ],
+        },
+        {
+          label: 'Preparation for publication',
+          collapsed: true,
+          autogenerate: { directory: '5.preparation'}
+        },
+        {
+          label: 'Publishing online',
+          collapsed: true,
+          autogenerate: { directory: '6.publishing' }
+        },
+        {
+          label: 'Data management',
+          collapsed: true,
+          autogenerate: { directory: '7.metadata' }
         }
       ],
       pagination: false

@@ -1,0 +1,29 @@
+---
+title: Create additional files (OCR, transcript, subtitle …)
+---
+Creating additional files enriches a digital collection and gives to users valuable information. Search in content became a standard in digital collections. To provide this some additional operations must be done.
+
+For printed texts the OCR is used. The most used FLOSS software is Tesseract, it has support for many languages, work fast and export in different formats, ALTO xml, HOCR, PDF, TSV and TXT. Some digital repository softwares have implemented Tesseract as an option for OCR, but for others this step must be done before upload, more about it in next chapter. For solution OCR before here some notes about Tesseract.
+Tesseract is cross platform software but it is originally without GUI (Graphical User Interspace) so using software is available using a command line. Luckily there are GUI applications that are built for Tesseract. Here is an official list of most available with OS support and Licence https://tesseract-ocr.github.io/tessdoc/User-Projects-%E2%80%93-3rdParty.html 
+
+Softwares that shows a good results and regularly updated are
+
+* VietOCR, cross-platform and easy to install, supports export in various formats, multilingual OCR (.NET version only).
+
+* gimageReader, cross platform and easy install also, export in txt, pdf and hocr only, multilingual OCR.
+
+For handwriting automatic recognition, there is a good solution with self train support (need to manually transcribe at least 1000 lines) or use pre trained models for various old scripts eScriptorium. This FLOSS software gives excellent results for handwritten documents and older scripts, it can import, pdf, jpg, png files also, support import from zip, images with transcripts with alto or page xml additional files (good to use for training). Installation is a bit harder but the documentation covers all steps, with small effort it can be installed fast. After transcription material can be exported with alto xml or page xml format, txt files are also an option.
+
+Software can be installed using this wiki https://gitlab.com/scripta/escriptorium/-/wikis/docker-install 
+
+And the last option is automatic transcription of audio and video material. One of the main issues was to create subtitles for audio/video content in non English languages. There were some solutions available but mainly for English. With AI development the situation has changed. OpenAI Foundation in September 2022. released the Whisper, a multilingual automatic speech recognition model. Now it has become one of the most used models for that purpose. The use of this mode is not too complicated but demands some python knowledge and work in a virtual environment. Also one of the big problems was minimum hardware requirements, for example min. 10GB of memory on a graphic card. 
+
+But, there are excellent versions of available Whisper models that can be used on a computer processor only with reasonable time for getting a result. One of the most used cross platform softwares for subtitle editing, Subtitle Edit, adds Whisper as a solution for creating a subtitle from audio and video content. Using an option Audio to text, select Whisper and select the version, Whisper CPP is very fast and works well on a processor, Whisper CTranslate2 also is very fast but needs Python installed on a system. After generating a subtitle, it can be corrected and exported in .srt or .vtt format for use in any digital repository that recognizes this format or just upload it to YouTube video clip. Whisper is also trained to translate from all supported languages (over 100) to English.
+More about this function on this link https://www.nikse.dk/subtitleedit/help#audio_to_text 
+
+What can be a potential problem is WER (Word Error Rate) for a specific language. It depends on training data for a specific language.
+
+The rate can be seen on this link
+https://raw.githubusercontent.com/openai/whisper/main/language-breakdown.svg 
+
+Installation of Subtitle Edit is on this link https://github.com/SubtitleEdit/subtitleedit/releases
