@@ -39,7 +39,10 @@ https://support.audacityteam.org/basics/recording-your-voice-and-microphone
 - On audio use line in chanel and plug the cable following the colors (red and white)
 - On computer open a audio recording software and press Record or REC (red dot)
 - Play audio from device
+- The recording level must never exceed the zero level, otherwise the sound will be cut and distorted. Thus, it is recommended that the maximum recording level should be adjusted at least 3–6 dB below zero.
 - Record the file in WAV format, most common is 44.1 kHz and 16 bit. Mono recording to mono file, stereo recording to stereo file.
+_ Recording with 96 kHz/24 bit gives better possibilities to correct errors afterwards, but the storage space requirement is double accordingly.
+- However, born-digital audio should be transferred with the same sampling rate/bit depth as they were recorded. So e.g. CDs with 44.1kHz/16 bit.
 
 
 ### Most common problems
@@ -47,9 +50,15 @@ Capturing audio brings some regular problems with it.
 
 - Gramophone records mostly have little or bigger scratches on it and dust. Before playing it is recommended to clean a record with a small soft record cleaner (can be found in almost every music shop). Most records, during play, produce pop and clicks. This can be cleaned in a software, for this more on digital preparation. Jump over and back the part of recording, which is harder to repeat in software because this over jumped part will miss in the captured file.
 
--  Audio cassette players mostly have a problem with a dirty head (a piece which reads the tape) which is cleanable, the quality of recording on tape can be low, with noise and low signal level. This problem, also can be solved in software, later in this more on digital preparation.
+- Audio cassette players mostly have a problem with a dirty head (a piece which reads the tape). Regular cleaning of the head, using an isopropyl-dipped cotton swab, is recommended, as errors caused by a dirty head are difficult to correct afterwards.
+
+- The quality of recording on tape can be low, with noise and low signal level. This problem, also can be solved in software, later in this more on digital preparation.
+
+- The quality may often be improved if the tape is rewinded back and forth a couple of times before it is digitized.
 
 - Compact disk, also can be scratched which produces a jump for some amount of recording, or constant back to the same part of recording. If that happens there are polishing kits available that can repair damaged plastic surface of disc. But the success of repair depends on the amount of plastic damage. Also clicks can be present on CD, which means that the disc is near to the end of life and unusable anymore.
+
+- CDs have a quite limited lifespan. This applies especially to self-recorded discs. Thus, it is recommended to transfer them without unnecessary delays to a better storage platform for long-term storage.
 
 Audio cables:
 
@@ -58,3 +67,9 @@ RCA cable
 
 ![3.5mm](../../../../assets/3-5mm.jpg)
 3.5mm cable
+
+The required cables depend on the devices used. The most common connections for consumer devices are RCA and 3.5 mm miniplug. Many USB sound cards have 6.3 mm inputs, so you need a cable with RCA connectors on one end to connect to the tape recorder, and 6.3 mm plugs on the other end for the sound card.
+
+### More information
+More detailed information about the digitization of audio recordings can be found, for example, in the Time Machine Organisation's Audio Digitization Pipeline document. It also contains information about audio formats other than those described above, such as open reel tapes, DAT tapes and Minidiscs.
+https://github.com/time-machine-project/requests-for-comments/blob/master/files/releases/RFC-0034/RFC-0034.md
